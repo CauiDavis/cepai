@@ -1,0 +1,106 @@
+:root {
+  --blue: #001657;
+  --orange: #ffb600;
+  --yellow: #fff300;
+  --white: #fffdd6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--white);
+}
+
+main {
+  width: 18.75rem;
+  height: 30.375rem;
+  margin: 6rem auto;
+}
+
+hr {
+  width: 16.125rem;
+  height: 0.063rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  border-radius: 1.75rem;
+  gap: 1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.buttonsContainer button {
+  width: 5.375rem;
+  height: 1.875rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.buttonsContainer button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.logo img {
+  width: 6.25rem;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inputContainer img {
+  width: 1.875rem;
+}
+
+input {
+  width: 13.75rem;
+  height: 1.875rem;
+  border: none;
+  padding-left: 0.875rem;
+  color: var(--blue);
+  background-color: var(--orange);
+  border-radius: 0.25rem;
+}
+
+input:focus {
+  background-color: var(--white);
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: var(--blue);
+}
+
+.unSelect {
+  pointer-events: none;
+}

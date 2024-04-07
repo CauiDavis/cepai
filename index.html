@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/images/cepaiIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+
+
+
+    <title>Cepaí</title>
+</head>
+
+<body>
+    <main class="content">
+        <div class="logo">
+            <img src="/images/cepaiIcon.png" alt="">
+        </div>
+        <div class="inputContainer">
+            <img src="/images/adress.png" alt="">
+            <input type="number" placeholder="digite o cep que deseja" id="cep" onkeypress="handleKeyPress(event)">
+        </div>
+        <div class="buttonsContainer">
+            <button onclick="searchCep()">buscar</button>
+            <button onclick="clearInputs()">limpar</button>
+        </div>
+        <hr>
+        <div class="inputContainer">
+            <img src="/images/city.png" alt="">
+            <input type="text" class="unSelect" id="city">
+        </div>
+        <div class="inputContainer">
+            <img src="/images/state.png" alt="">
+            <input type="text" class="unSelect" id="state">
+        </div>
+        <div class="inputContainer">
+            <img src="/images/road.png" alt="">
+            <input type="text" class="unSelect" id="road">
+        </div>
+        <div class="inputContainer">
+            <img src="/images/district.png" alt="">
+            <input type="text" class="unSelect" id="district">
+        </div>
+    </main>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
