@@ -23,24 +23,29 @@ async function getAddress(address) {
         state = await address.state;
         district = await address.district;
         cepStatus = await address.code;
-        console.log(cepStatus);
 
-        if (cepStatus === "invalid") {
-            alert("Cep inválido!");
-            clearInputs();
-            return;
-        }
-
-        if (cepStatus == "not_found") {
-            alert("Cep não encontrado!");
-            clearInputs();
-            return;
-        }
-
-        receiveAddress();
+        validateCep(cepStatus);
     } catch (error) {
         console.error("erro" + error);
         throw error;
+    }
+}
+
+function validateCep(cepData) {
+    if (cepData === "invalid") {
+        alert("Cep inválido!");
+        clearInputs();
+
+    }
+
+    else if (cepData == "not_found") {
+        alert("Cep não encontrado!");
+        clearInputs();
+
+    }
+
+    else {
+        receiveAddress();
     }
 }
 
@@ -66,17 +71,22 @@ function handleKeyPress(event) {
     }
 }
 
+function isNone(value) {
+    return (value === undefined || value === null || value === "");
+}
+
 async function searchCep() {
 
     let cep = document.getElementById("cep").value;
 
-    await fetchAddress(cep);
-
-    if (isNaN(cep)) {
-        alert("Digite um cep válido!");
+    if (isNone(cep)) {
+        alert("Digite alguma coisa!");
         return;
     }
 
+    else {
+        await fetchAddress(cep);
+    }
 }
 
 function clearInputs() {
