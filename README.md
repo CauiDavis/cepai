@@ -38,3 +38,6 @@ Cepaí é uma plataforma de busca de cep, basta você preencher o cep desejado n
 
 - criação do frontend
 - criação do backend
+<div align="center">
+  <img src="https://github.com/CauiDavis/cepai/raw/main/images/Cepa%C3%ADCT.png" width="350"/>
+<div/>
