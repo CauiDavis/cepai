@@ -1,7 +1,7 @@
-# cepai
+# cepaí
 
 <div align="center">
-<img src="https://github.com/portfolio-projetos-dev/kino/raw/main/.gitassets/capa.png" width="350" />
+<img src="https://github.com/CauiDavis/cepai/raw/main/images/cepaiIcon.png" width="250" />
 
 <div data-badges>
   <img src="https://img.shields.io/github/stars/CauiDavis/cepai?style=for-the-badge" alt="GitHub stars" />
@@ -12,6 +12,7 @@
 <div data-badges>
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Javascript"/>
 </div>
 </div>
 
